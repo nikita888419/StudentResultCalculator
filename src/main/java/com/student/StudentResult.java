@@ -1,0 +1,1 @@
+package com.student; public class StudentResult{public int total(int a,int b,int c){return a+b+c;} public double percentage(int t){return t/3.0;} public String result(double p){return p>=35?"PASS":"FAIL";}}

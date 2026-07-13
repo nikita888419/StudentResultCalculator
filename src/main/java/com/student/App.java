@@ -1,0 +1,1 @@
+package com.student; public class App{public static void main(String[]args){StudentResult s=new StudentResult();int t=s.total(80,75,90);double p=s.percentage(t);System.out.println("Total Marks : "+t);System.out.println("Percentage  : "+p);System.out.println("Result      : "+s.result(p));}}

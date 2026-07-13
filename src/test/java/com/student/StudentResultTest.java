@@ -1,0 +1,1 @@
+package com.student; import org.junit.jupiter.api.Test; import static org.junit.jupiter.api.Assertions.*; public class StudentResultTest{@Test void test(){StudentResult s=new StudentResult();assertEquals(245,s.total(80,75,90));assertEquals("PASS",s.result(s.percentage(245)));}}
