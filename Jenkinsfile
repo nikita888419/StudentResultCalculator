@@ -15,15 +15,20 @@ pipeline {
             }
         }
 
-        stage('Test') {
-            steps {
-                sh 'mvn test'
-            }
-        }
+        stage('Parallel Build') {
+            parallel {
 
-        stage('Package') {
-            steps {
-                sh 'mvn package'
+                stage('Unit Test') {
+                    steps {
+                        sh 'mvn test'
+                    }
+                }
+
+                stage('Package') {
+                    steps {
+                        sh 'mvn package'
+                    }
+                }
             }
         }
     }
